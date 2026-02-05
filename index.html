@@ -52,6 +52,20 @@
     a.no-underline {
       text-decoration: none;
     }
+
+    .portfolio-card {
+      transition: all 0.2s ease;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
+    }
+
+    .portfolio-card:active {
+      transform: translateY(0) scale(0.98);
+      box-shadow: 0 2px 4px rgba(99, 102, 241, 0.1);
+    }
   </style>
 </head>
 <body>
@@ -141,20 +155,20 @@
       <div class="section-title"><i class="fas fa-project-diagram"></i>项目经验</div>
       <div class="border-l-2 border-indigo-300 pl-4 space-y-3 text-sm text-gray-700">
         <div>
-          <div class="font-bold text-indigo-700">国际级赛事项目运营（Ironman铁人三项）</div>
-          <div class="text-gray-600">统筹多方协同与现场交付，用AI模板提升信息管理与执行效率</div>
-        </div>
-        <div>
-          <div class="font-bold text-indigo-700">超大型赛事运营与应急保障（横琴国际马拉松）</div>
-          <div class="text-gray-600">负责交通流程规划、志愿者管理、应急方案设计</div>
-        </div>
-        <div>
           <div class="font-bold text-indigo-700">文旅运营数字化（运营管理AI知识库）</div>
           <div class="text-gray-600">搭建数字化管理体系，用AI沉淀知识库，提升效率并降低成本</div>
         </div>
         <div>
           <div class="font-bold text-indigo-700">招投标与项目推进（高校合作文旅项目）</div>
           <div class="text-gray-600">组织投标材料与客户协同，推进合同节点与项目落地</div>
+        </div>
+        <div>
+          <div class="font-bold text-indigo-700">国际级赛事项目运营（Ironman铁人三项）</div>
+          <div class="text-gray-600">统筹多方协同与现场交付，用AI模板提升信息管理与执行效率</div>
+        </div>
+        <div>
+          <div class="font-bold text-indigo-700">超大型赛事运营与应急保障（横琴国际马拉松）</div>
+          <div class="text-gray-600">负责交通流程规划、志愿者管理、应急方案设计</div>
         </div>
        <div class="pt-1 text-gray-500 text-xs">📌 能力迁移：市场拓展｜投标合同｜项目交付｜AI提效</div>
       </div>
@@ -171,29 +185,46 @@
 
     <div class="mb-4">
       <div class="section-title"><i class="fas fa-link"></i>作品展示</div>
-
       <div class="mb-3">
+        <div class="mb-3">
+        <div class="text-xs font-semibold text-gray-600 mb-2 pl-1">🔍 数据挖掘</div>
+        <div class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+          <a href="https://mp.weixin.qq.com/s/8SRCZakchCfw80uo2SmQag" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
+            <div class="font-semibold text-indigo-700">📊 Reddit挖掘</div>
+            <div class="text-xs text-gray-500">小而美需求方法论</div>
+          </a>
+          <a href="https://my.feishu.cn/docx/XMsOdxtBWoqM2xxSDULckjPmnQf" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
+            <div class="font-semibold text-indigo-700">📋 用Skill挖掘机会</div>
+            <div class="text-xs text-gray-500">Claude Code指南</div>
+          </a>
+          <a href="https://my.feishu.cn/base/A9NZbCblpaOMwXsQTRsc8bEBnEf?table=blkpkVlsOBCpmBkb" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
+            <div class="font-semibold text-indigo-700">📊 AI知识库</div>
+            <div class="text-xs text-gray-500">飞书多维表格</div>
+          </a>
+        </div>
+      </div>
+
         <div class="text-xs font-semibold text-gray-600 mb-2 pl-1">⚙️ AI工作流</div>
         <div class="grid grid-cols-2 gap-2 text-sm text-gray-700">
-          <a href="https://my.feishu.cn/docx/J3M3deY5mo3ltOxFVz7cl5yXnwh" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
+          <a href="https://my.feishu.cn/docx/J3M3deY5mo3ltOxFVz7cl5yXnwh" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
             <div class="font-semibold text-indigo-700">🦞 Atlas+Clawbot</div>
             <div class="text-xs text-gray-500">飞书连接教程</div>
           </a>
-          <a href="https://r0rel9lqdms.feishu.cn/docx/VSmedTYaLo6qdkxeVgVcO6R4nTg" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
+          <a href="https://r0rel9lqdms.feishu.cn/docx/HxSXdAkvdos1MZx70aDcuWPVnof" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
+            <div class="font-semibold text-indigo-700">🌍 Deepseek</div>
+            <div class="text-xs text-gray-500">小红书爆文生产机</div>
+          </a>
+          <a href="https://r0rel9lqdms.feishu.cn/docx/VSmedTYaLo6qdkxeVgVcO6R4nTg" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
             <div class="font-semibold text-indigo-700">🙌 RPA+AI</div>
             <div class="text-xs text-gray-500">简单应用上手篇</div>
           </a>
-          <a href="https://r0rel9lqdms.feishu.cn/docx/ApaJdYIkcohPKXxgVXLchBoSnwf" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
-            <div class="font-semibold text-indigo-700">🔥 视频转AI</div>
-            <div class="text-xs text-gray-500">一键批量爆款工作流</div>
-          </a>
-          <a href="https://my.feishu.cn/docx/MuaMdxqPpoVxduxkvgXcyOEwnsh" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
+          <a href="https://my.feishu.cn/docx/MuaMdxqPpoVxduxkvgXcyOEwnsh" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
             <div class="font-semibold text-indigo-700">🍫 小红书工作流</div>
             <div class="text-xs text-gray-500">RPA+AI+飞书多维表</div>
           </a>
-          <a href="https://my.feishu.cn/docx/XMsOdxtBWoqM2xxSDULckjPmnQf" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
-            <div class="font-semibold text-indigo-700">📋 智能体教程</div>
-            <div class="text-xs text-gray-500">Claude Code指南</div>
+          <a href="https://r0rel9lqdms.feishu.cn/docx/ApaJdYIkcohPKXxgVXLchBoSnwf" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
+            <div class="font-semibold text-indigo-700">🔥 AI转视频</div>
+            <div class="text-xs text-gray-500">一键批量爆款工作流</div>
           </a>
         </div>
       </div>
@@ -201,51 +232,35 @@
       <div class="mb-3">
         <div class="text-xs font-semibold text-gray-600 mb-2 pl-1">🤖 AI智能体</div>
         <div class="grid grid-cols-2 gap-2 text-sm text-gray-700">
-          <a href="https://r0rel9lqdms.feishu.cn/docx/UsgPdAOcGojisRxgK6IcwbQfnEd" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
+          <a href="https://r0rel9lqdms.feishu.cn/docx/UsgPdAOcGojisRxgK6IcwbQfnEd" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
             <div class="font-semibold text-indigo-700">🎭 Coze智能体</div>
             <div class="text-xs text-gray-500">心理学视频小助手</div>
           </a>
-          <a href="https://r0rel9lqdms.feishu.cn/docx/HxSXdAkvdos1MZx70aDcuWPVnof" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
-            <div class="font-semibold text-indigo-700">🌍 Deepseek</div>
-            <div class="text-xs text-gray-500">小红书爆文生产机</div>
-          </a>
-          <a href="https://yuanqi.tencent.com/agent/LGvdw7ixFl5u?from=share" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
+          <a href="https://yuanqi.tencent.com/agent/LGvdw7ixFl5u?from=share" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
             <div class="font-semibold text-indigo-700">📘 纳瓦尔宝典</div>
             <div class="text-xs text-gray-500">智者智能体</div>
           </a>
-          <a href="https://yuanqi.tencent.com/agent/m16yB0AmoaKz?from=share" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
+          <a href="https://yuanqi.tencent.com/agent/m16yB0AmoaKz?from=share" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
             <div class="font-semibold text-indigo-700">🏅 掌控习惯</div>
             <div class="text-xs text-gray-500">习惯教练智能体</div>
           </a>
-          <a href="https://yuanqi.tencent.com/agent/JHzJMYgWdTBA?from=share" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
+          <a href="https://yuanqi.tencent.com/agent/JHzJMYgWdTBA?from=share" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
             <div class="font-semibold text-indigo-700">🐸 蛤蟆先生</div>
             <div class="text-xs text-gray-500">苍鹭医生智能体</div>
           </a>
         </div>
       </div>
 
-      <div class="mb-3">
-        <div class="text-xs font-semibold text-gray-600 mb-2 pl-1">🔍 数据挖掘</div>
-        <div class="grid grid-cols-2 gap-2 text-sm text-gray-700">
-          <a href="https://mp.weixin.qq.com/s/8SRCZakchCfw80uo2SmQag" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
-            <div class="font-semibold text-indigo-700">📊 Reddit挖掘</div>
-            <div class="text-xs text-gray-500">小而美需求方法论</div>
-          </a>
-          <a href="https://my.feishu.cn/base/A9NZbCblpaOMwXsQTRsc8bEBnEf?table=blkpkVlsOBCpmBkb" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
-            <div class="font-semibold text-indigo-700">📊 AI知识库</div>
-            <div class="text-xs text-gray-500">飞书多维表格</div>
-          </a>
-        </div>
-      </div>
+      
 
       <div>
         <div class="text-xs font-semibold text-gray-600 mb-2 pl-1">✍️ 内容生产</div>
         <div class="grid grid-cols-2 gap-2 text-sm text-gray-700">
-          <a href="https://r0rel9lqdms.feishu.cn/docx/O33cdHmzYoadwMx3DP3cy6HRnqb" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
+          <a href="https://r0rel9lqdms.feishu.cn/docx/O33cdHmzYoadwMx3DP3cy6HRnqb" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
             <div class="font-semibold text-indigo-700">🎬 法国GEM</div>
             <div class="text-xs text-gray-500">官媒收录</div>
           </a>
-          <a href="https://mp.weixin.qq.com/s/3npa7FNV5V4T91MG_3l_aA" target="_blank" class="bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 transition-colors no-underline">
+          <a href="https://mp.weixin.qq.com/s/3npa7FNV5V4T91MG_3l_aA" target="_blank" class="portfolio-card bg-white rounded-lg shadow px-3 py-2 border border-gray-100 hover:border-indigo-300 no-underline">
             <div class="font-semibold text-indigo-700">🚴‍♀️ 川藏骑行</div>
             <div class="text-xs text-gray-500">318图文纪实</div>
           </a>
@@ -259,7 +274,7 @@
       <div class="rounded-lg overflow-hidden shadow-md border border-indigo-200">
         <iframe
           src="https://udify.app/chatbot/cMY2LvWESiqhYGAW"
-          style="width: 100%; height: 700px"
+          style="width: 100%; height: 400px"
           frameborder="0"
           allow="microphone">
         </iframe>
